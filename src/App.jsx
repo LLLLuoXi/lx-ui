@@ -5,14 +5,18 @@
  * @Description:
  */
 
-import HelloWorld from "./components/HelloWorld.jsx";
-export default {
-  name: "helloWorld",
+import Avatar from "./components/Avatar.jsx";
+
+const App = {
+  name: "app",
   setup() {
+    const testUrl = "https://avatars.githubusercontent.com/u/53041755?v=4";
     return () => (
       <div id="app">
-        <HelloWorld />
+        <Avatar imgUrl={testUrl} size={150} />
       </div>
     );
   },
 };
+
+export default App;
