@@ -13,7 +13,7 @@ const App = {
     const testUrl = "https://avatars.githubusercontent.com/u/53041755?v=4";
     return () => (
       <div id="app">
-        <Avatar imgUrl={testUrl} size={150} />
+        <Avatar imgUrl={testUrl} size={200} rounded />
       </div>
     );
   },
