@@ -1,5 +1,11 @@
+/*
+ * @Author: luoxi
+ * @LastEditTime: 2022-05-12 22:29:36
+ * @LastEditors: your name
+ * @Description:
+ */
 /* eslint-disable vue/multi-word-component-names */
-import "../style/Avatar.scss";
+import "@style/Avatar.scss";
 import { computed } from "vue";
 
 const Avatar = {

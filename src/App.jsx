@@ -1,11 +1,9 @@
 /*
  * @Author: luoxi
- * @LastEditTime: 2022-05-08 23:02:23
+ * @LastEditTime: 2022-05-12 22:47:06
  * @LastEditors: your name
  * @Description:
  */
-
-import Avatar from "./components/Avatar.jsx";
 
 const App = {
   name: "app",
