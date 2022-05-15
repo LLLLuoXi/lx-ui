@@ -1,12 +1,14 @@
 /*
  * @Author: luoxi
- * @LastEditTime: 2022-05-12 22:29:36
+ * @LastEditTime: 2022-05-15 23:46:16
  * @LastEditors: your name
  * @Description:
  */
 /* eslint-disable vue/multi-word-component-names */
-import "@style/Avatar.scss";
+import styles from "@style/Avatar.module.scss";
 import { computed } from "vue";
+
+console.log(styles);
 
 const Avatar = {
   name: "Avatar",
@@ -25,17 +27,19 @@ const Avatar = {
     },
   },
   setup(props) {
+    const { imgUrl, size, rounded } = props;
+    console.log(rounded);
     const sizeStyle = computed(() => {
       return {
-        width: props.size + "px",
-        height: props.size + "px",
+        width: size + "px",
+        height: size + "px",
       };
     });
 
     return () => (
       <img
-        class={props.rounded ? "avatar-container rounded " : "avatar-container"}
-        src={props.imgUrl}
+        class={rounded ? styles.rounded : styles.avatar}
+        src={imgUrl}
         style={sizeStyle.value}
         alt="Avatar"
       />

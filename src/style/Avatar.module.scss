@@ -1,0 +1,10 @@
+.avatar {
+  object-fit: cover;
+  display: block;
+  width: 300px;
+}
+.rounded {
+  composes: avatar;
+  border-radius: 50%;
+  outline: 2px solid;
+}

@@ -1,6 +1,6 @@
 /*
  * @Author: luoxi
- * @LastEditTime: 2022-05-12 22:31:13
+ * @LastEditTime: 2022-05-15 21:59:40
  * @LastEditors: your name
  * @Description:
  */
@@ -24,5 +24,14 @@ module.exports = defineConfig({
     config.resolve.alias
       .set("@others", path.resolve(__dirname, "src/components/others"))
       .set("@style", path.resolve(__dirname, "src/style"));
+  },
+  css: {
+    loaderOptions: {
+      css: {
+        modules: {
+          auto: () => true,
+        },
+      },
+    },
   },
 });
