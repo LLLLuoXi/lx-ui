@@ -1,3 +1,9 @@
+/*
+ * @Author: luoxi
+ * @LastEditTime: 2022-05-19 21:40:28
+ * @LastEditors: your name
+ * @Description:
+ */
 module.exports = {
   root: true,
   env: {
@@ -14,6 +20,8 @@ module.exports = {
   rules: {
     "no-console": process.env.NODE_ENV === "production" ? "warn" : "off",
     "no-debugger": process.env.NODE_ENV === "production" ? "warn" : "off",
+    "no-unused-vars": "off",
+    "vue/no-unused-vars": "off",
   },
   overrides: [
     {

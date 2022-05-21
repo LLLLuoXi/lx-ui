@@ -1,0 +1,16 @@
+:global(.ImageLoader-test-container) {
+  width: 1800px;
+  height: 1500px;
+  outline: 1px solid;
+  margin: 0 auto;
+  position: relative;
+}
+
+/* :global(.ImageLoader-test-container img) {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+} */

@@ -1,6 +1,6 @@
 /*
  * @Author: luoxi
- * @LastEditTime: 2022-05-15 21:59:40
+ * @LastEditTime: 2022-05-19 22:56:24
  * @LastEditors: your name
  * @Description:
  */
@@ -30,6 +30,7 @@ module.exports = defineConfig({
       css: {
         modules: {
           auto: () => true,
+          localIdentName: "[local]_[hash:base64:5]",
         },
       },
     },

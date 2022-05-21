@@ -1,14 +1,14 @@
 /*
  * @Author: luoxi
- * @LastEditTime: 2022-05-17 22:35:43
+ * @LastEditTime: 2022-05-21 00:21:36
  * @LastEditors: your name
  * @Description:
  */
 /* eslint-disable vue/multi-word-component-names */
 import styles from "@style/Avatar.module.scss";
-import { computed } from "vue";
+import { computed, toRefs } from "vue";
 
-console.log(styles);
+// console.log(styles);
 
 const Avatar = {
   name: "Avatar",
@@ -27,7 +27,7 @@ const Avatar = {
     },
   },
   setup(props) {
-    const { imgUrl, size, rounded } = props;
+    const { imgUrl, size, rounded } = toRefs(props);
     console.log(rounded);
     const sizeStyle = computed(() => {
       return {
